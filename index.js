@@ -1,34 +1,34 @@
-//// Global scope variable: burgers array
-let burgers = ['Hamburger', 'Cheeseburger'];
+// Global scope variable
+const burgers = ['Hamburger', 'Cheeseburger'];
 
-// Global scope variable: featured drink
+// Global scope variable
 let featuredDrink = 'Strawberry Milkshake';
 
 
-// Function with function-scoped variable
+// Function scope
 function addBurger() {
 
     // Function-scoped variable
-    let newBurger = 'Flatburger';
+    const newBurger = 'Flatburger';
 
     // Add new burger to burgers array
     burgers.push(newBurger);
 }
 
 
-// Block-scoped variable
-if (true) {
+// Block scope
+if(true) {
 
     // Block-scoped variable
-    let anotherNewBurger = 'Maple Bacon Burger';
+    const anotherNewBurger = 'Maple Bacon Burger';
 
-    // Add new burger to burgers array
+    // Add another burger to burgers array
     burgers.push(anotherNewBurger);
 }
 
 
-// Function to change featured drink
+// Change featured drink function
 function changeFeaturedDrink() {
 
     featuredDrink = 'The JavaShake';
-} 
+}
