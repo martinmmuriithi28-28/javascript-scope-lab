@@ -31,4 +31,4 @@ if (true) {
 function changeFeaturedDrink() {
 
     featuredDrink = 'The JavaShake';
-} Write your solution in this file!
+} 
